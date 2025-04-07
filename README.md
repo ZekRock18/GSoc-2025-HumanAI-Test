@@ -61,15 +61,16 @@ Tasks were split into three key phases:
 - Apply sentiment classification:
   - **VADER** (for Twitter) 🐦 or **TextBlob** 📚
 - Detect crisis keywords using:
-  - **TF-IDF** or **Word Embeddings** (e.g., BERT, Word2Vec)
+  - **TF-IDF**
+  - **Word Embeddings** (BERT / Word2Vec)
 - Classify posts into Risk Levels:
-  - 🔴 **High-Risk**: Direct crisis language (e.g., "I don't want to be here anymore")
-  - 🟠 **Moderate Concern**: Seeking help, discussing struggles (e.g., "I feel lost lately")
+  - 🔴 **High-Risk**: Direct crisis expressions (e.g., "I don't want to be here anymore")
+  - 🟠 **Moderate Concern**: Seeking help or discussing struggles
   - 🟢 **Low Concern**: General discussions about mental health
 
 📦 **Deliverables**:
-- Python script for sentiment and risk classification
-- Table or plot showing sentiment/risk distribution 📈
+- Python script that classifies posts based on sentiment and risk
+- Table/plot showing distribution by sentiment and risk category
 
 ---
 
@@ -77,35 +78,44 @@ Tasks were split into three key phases:
 
 ⏰ **Estimated Time**: 1–2 hours
 
-**Goal**: Map crisis discussions geospatially for actionable insights!
+**Goal**: Visualize crisis discussions across locations using a heatmap!
 
 ### Steps:
-- Extract location data using:
-  - Geotagged posts (if available) 📍
-  - NLP-based place recognition (e.g., "Need help in Austin" → maps to Austin, TX) 📌
-- Generate a **heatmap** using **Folium** or **Plotly**
-- Highlight top 5 locations with highest crisis activity 🔥
+- Extract location metadata:
+  - From geotagged posts 📍
+  - Using NLP place recognition (e.g., "Need help in Austin" → Austin, TX)
+- Generate an interactive heatmap with **Folium** or **Plotly**
+- Highlight Top 5 Locations 📈
 
 📦 **Deliverables**:
-- Interactive heatmap displaying crisis trends
-- List of top crisis-prone locations
+- Heatmap visualization of crisis posts
+- List of Top 5 locations with highest crisis mentions
 
 ---
 
-## 🧰 Tech Stack
+## 📄 Proposal Document
+
+You can read the detailed project plan and vision here:
+
+👉 [**GSoC 2025 Proposal — Prakhar Gupta**](https://docs.google.com/document/d/1fak3_rfyA8PrAz3lJ76iI4nob8sCmk85h8YGm1Gtoqg/edit?usp=sharing)  
+
+---
+
+## 🛠️ Tech Stack
 
 - Python 🐍
-- Tweepy / PRAW (Twitter/X and Reddit API Clients)
-- NLTK, SpaCy, VADER, TextBlob (NLP & Sentiment Analysis) 🧠
-- Scikit-learn, TensorFlow/Keras (optional ML models) 🤖
-- Folium, Plotly (Visualization) 🗺️
-- Pandas, NumPy (Data Handling) 📊
+- Tweepy / PRAW APIs
+- VADER / TextBlob for Sentiment Analysis
+- TF-IDF / BERT / Word2Vec for NLP
+- Folium / Plotly for Visualization
 
 ---
 
-## 🚀 How to Run
+## 🤝 Contribution
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/ZekRock18/GSoc-2025-HumanAI-Test.git
-   cd GSoc-2025-HumanAI-Test
+This project was completed as part of the **GSoC 2025 Selection Process**.  
+Grateful for the opportunity to contribute towards meaningful AI solutions in mental health. 🙏
+
+---
+
+# 🚀 Let's Build a Safer World Together!
