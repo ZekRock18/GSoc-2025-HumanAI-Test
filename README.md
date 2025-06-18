@@ -1,4 +1,4 @@
-# 🌟 GSoC 2025 — HumanAI Candidate Assessment 🌟
+# 🌟 SentinelAI: Longitudinal Behavioral and Geospatial Analysis for Mental Health Crisis Detection 🌟
 **AI-Powered Behavioral Analysis for Suicide Prevention, Substance Use, and Mental Health Crisis Detection**  
 *Longitudinal Geospatial Crisis Trend Analysis* 🚀
 
